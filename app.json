@@ -1,0 +1,79 @@
+{
+  "expo": {
+    "scheme": "habibifitness",
+    "name": "Habibi Fitness",
+    "slug": "habibi-fitness",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app-icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/app-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/app-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.logisoltech.habibifitness",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.INTERNET",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.POST_NOTIFICATIONS",
+        "com.android.vending.BILLING"
+      ]
+    },
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#07da63",
+      "iosDisplayInForeground": true,
+      "androidMode": "default",
+      "androidCollapsedTitle": "New updates from Habibi Fitness"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "GEO_API_KEY": "AIzaSyAi-jwXP-GUFobRc6dW8OklhG7K0z5dPok",
+      "router": {},
+      "eas": {
+        "projectId": "0a3b1c6f-38e3-4b7b-b88a-b0b8455dba78"
+      }
+    },
+    "plugins": [
+      "expo-font",
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/app-icon.png",
+          "color": "#07da63",
+          "sounds": []
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share your transformation images.",
+          "cameraPermission": false
+        }
+      ]
+    ],
+    "owner": "logisol_tech"
+  }
+}
